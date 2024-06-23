@@ -1,3 +1,69 @@
-* {
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
     background-color: hsl(30, 54%, 90%);
+    margin: 100px 200px;
 }
+
+
+
+
+/* General styles for the background div */
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto; /* Centra el div horizontalmente */
+    padding: 20px; /* Espacio interior para darle un poco de respiro */
+    background-color: #f8f8f8; /* Color de fondo, ajústalo según tus preferencias */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un poco de profundidad */
+    border-radius: 10px; /* Esquinas redondeadas */
+  }
+  
+  /* Ensure the img is responsive */
+  .background img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* General styles for the table to make it fit the container */
+  .background table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .background table, .background th, .background td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  /* Additional styles for better readability */
+  .background h1, .background h2, .background h3 {
+    margin: 10px 0;
+  }
+  
+  .background p, .background ul, .background ol, .background table {
+    margin: 10px 0;
+  }
+  
+  .background ul, .background ol {
+    padding-left: 20px;
+  }
+  
+  .background hr {
+    margin: 20px 0;
+  }
+  
+  .background .attribution {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
